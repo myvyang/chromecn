@@ -49,7 +49,9 @@
       <img src="https://img.alicdn.com/tfs/TB1f5afuN9YBuNjy0FfXXXIsVXa-192-192.png" alt="Chrome is a fast, secure, free web browser." class="chr-hero__image download">
       <p class="lead">Chrome浏览器(谷歌浏览器)，中国镜像，提供最纯净的原版离线安装包。</p>
       <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary download">下载</a>
+        <a href="http://sec-soft.oss-cn-hangzhou.aliyuncs.com/chrome/ChromeStandaloneSetup64.exe" class="btn btn-lg btn-secondary download">下载(64位版本)</a>
+        <a href="http://sec-soft.oss-cn-hangzhou.aliyuncs.com/chrome/ChromeStandaloneSetup.exe" class="btn btn-lg btn-secondary">32位</a>
+        <a href="http://sec-soft.oss-cn-hangzhou.aliyuncs.com/chrome/googlechrome.dmg" class="btn btn-lg btn-secondary">MAC OSX版本</a>
       </p>
       <p>最新更新时间：<span id="nowTime"></span></p>
       <p>反馈：myvyang@gmail.com</p>
@@ -71,13 +73,6 @@
   <script src="https://cdn.bootcss.com/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script>
-    function download() {
-      var a = document.createElement('a');
-      a.href = "https://chrome-mirror.oss-cn-hangzhou.aliyuncs.com/ChromeStandaloneSetup64.exe";
-      a.download = "ChromeStandaloneSetup64.exe";
-      a.click();
-    }
-    $(".download").click(download);
     $("#nowTime").text(new Date().toLocaleDateString());
   </script>
 </body>
